@@ -4069,7 +4069,7 @@ function handshakecheck {
 
 		if [ -f $DUMP_PATH/intento ]; then
 
-		if ! aircrack-ng -w $DUMP_PATH/data.txt $DUMP_PATH/$Host_MAC-01.cap | grep -qi \"Passphrase not in\"; then
+		if ! aircrack-ng -w $DUMP_PATH/data.txt $DUMP_PATH/$Host_MAC-01.cap | grep -qi \"KEY NOT FOUND\"; then
 		echo \"2\">$DUMP_PATH/intento
 		break
 		else
